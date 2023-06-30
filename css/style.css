@@ -155,3 +155,41 @@ html,body{
     background-color: var(--white);
     color: var(--orange);
 }
+
+/* !ABOUT */
+.About{
+    padding: 50px 0;
+}
+.About__form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.About__r h6{
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--orange);
+}
+
+.About__r h3{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;   
+    padding-bottom: 20px;
+}
+
+.About__l{
+    color: var(--gray-dark);
+    line-height: 1.6;
+}
+.About__l p:first-of-type{
+    padding-bottom: 20px;
+}
+.About__l p{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--font-color);
+}
