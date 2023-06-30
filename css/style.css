@@ -114,3 +114,44 @@ html,body{
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
 }
+
+/* !BANNER */
+.Banner-only{
+    background-image:linear-gradient(to right, var(--orange), hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+    background-position: top left;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+.Banner-only__form{
+    line-height: 1.8;
+    max-width: 600px;
+    padding-top: 180px;
+    color: var(--white);
+}
+
+.Banner-only__form h1{
+    font-size: 54px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.Banner-only__form p{
+    padding-bottom: 20px;
+}
+
+.Banner-only__form button{
+    padding: 20px 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #ffffff00;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0;
+    transition: all 0.5s;
+}
+.Banner-only__form button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
