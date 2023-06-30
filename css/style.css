@@ -25,3 +25,92 @@ html,body{
     padding-left: 15px;
     margin:auto;
 }
+
+/* !HEADER */
+/* công thức chỉnh header có 2 thuốc tính position vs gird
+    flex ko chỉnh dc
+*/
+.header .container{
+    position: relative;
+    margin: auto;
+}
+.header__form{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 0 20px 0;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    padding-right: 15px;
+}
+
+.header__r{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.header__r form i{
+    position: absolute;
+    color: var(--gray-dark);
+    top: 10px;
+    left: -30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header__r input{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    top: -5px;
+    left: -230px;
+}
+
+.header__r input:focus{
+    outline: none;
+}
+/* !Header ---- overlay  */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.764);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay__form li{
+    list-style: none;
+    line-height: 2.5;
+}
+
+.overlay__form li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.overlay__form li a:hover{
+    color: var(--orange);
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    color: var(--white);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
