@@ -359,6 +359,8 @@
         </div>
       </div>
     </section>
+
+    <!-- video lỗi không hiện -->
     <!-- Video -->
     <section class="Video"></section>
     <!-- Blog -->
@@ -466,6 +468,53 @@
           document.getElementById("overlay").style.display = "none";
         }
     </script>
+    <!-- jquery -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
+    <!-- counter up -->
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script>
+      $(".count-number").counterUp({
+        delay: 10,
+        time: 3000,
+      });
+    </script>
+
+    <!-- carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-agency").owlCarousel({
+          loop: true,
+          nav: false,
+          margin: 50,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            736: {
+              items: 1,
+              nav: false,
+            },
+          },
+        });
+      });
+    </script>
+    <!-- backtotop -->
+    <a
+      class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+      href="#"
+    >
+      <i class="fa fa-angle-up"></i
+    ></a>
+    <script src="./js/main.js"></script>
 </body>
 </html>
