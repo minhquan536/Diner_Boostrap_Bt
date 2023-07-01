@@ -605,3 +605,61 @@ p.count-text {
     rgba(71, 63, 79, 0.16) 0px 5px 10px;
   transition: 0.3s ease;
 }
+/* ======== blog ======= */
+.Blog {
+  background-color: #f7f7f7;
+}
+.Blog__top {
+  text-align: center;
+}
+.Blog__item {
+  cursor: pointer;
+}
+.card-top img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+}
+
+.card-bot h4 {
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  font-weight: 600;
+  color: #232121;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+  font-family: var(--font-primary);
+}
+.card__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__left img {
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.card__left span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #232121;
+  letter-spacing: 0.02em;
+  font-family: var(--font-primary);
+}
+.card__right a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #232121;
+  opacity: 0.9;
+  font-family: var(--font-primary);
+}
+.card__right a:hover {
+  color: var(--orange-color);
+}
