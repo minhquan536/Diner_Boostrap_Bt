@@ -9,6 +9,7 @@ body {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   color: #404040;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -91,8 +92,8 @@ a {
 .header__r form i {
   position: absolute;
   color: var(--gray-dark);
-  top: 10px;
-  left: -30px;
+  top: 12px;
+  left: -50px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -545,9 +546,9 @@ a {
   right: 0;
   z-index: -1;
 }
-/* .container {
-    padding: 48px 0;
-  } */
+.Deliciousness .container {
+  padding: 48px 0;
+}
 .Deliciousness h3 {
   font-size: 35px;
   line-height: 40px;
@@ -695,4 +696,28 @@ p.count-text {
 }
 .card__right a:hover {
   color: var(--orange-color);
+}
+
+/* backtotop */
+.backToTop {
+  width: 50px;
+  height: 50px;
+  background: var(--orange-color);
+  border-radius: 35px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
+  visibility: hidden;
+  opacity: 0;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }
