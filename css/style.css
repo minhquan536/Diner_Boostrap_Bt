@@ -643,6 +643,9 @@ p.count-text {
 .Blog {
   background-color: #f7f7f7;
 }
+.Blog .container {
+  padding: 48px 0;
+}
 .Blog__top {
   text-align: center;
 }
@@ -698,15 +701,88 @@ p.count-text {
   color: var(--orange-color);
 }
 
+/* =============== Carousel ================= */
+.Carousel {
+  padding: 48px 0 68px;
+}
+.Carousel .item {
+  text-align: center;
+}
+.Carousel__top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.Carousel__item {
+  padding: 8px 0;
+}
+.Carousel .Carousel__item .image {
+  width: 85px;
+  height: 85px;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.Carousel__item .fa {
+  padding-top: 15px;
+  font-size: 22px;
+  color: var(--orange-color);
+  display: block;
+}
+.Carousel__item blockquote {
+  font-size: 22px;
+  line-height: 32px;
+  color: #232121;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-family: var(--font-primary);
+}
+.Carousel__desc {
+  color: #161c2db3;
+  font-family: var(--font-primary);
+  line-height: 26px;
+  font-size: 16px;
+}
+.Carousel__item .text-center h3 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: var(--font-primary);
+  color: #232121;
+}
+.Carousel__item .indentity {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  opacity: 0.8;
+  margin-top: 4px;
+  color: #161c2db3;
+  font-family: var(--font-primary);
+}
+.Carousel .owl-theme .owl-dots .owl-dot.active span {
+  background: #ff6600;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff6600 !important;
+}
+.owl-dots {
+  padding-top: 22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  background: none;
+}
 /* backtotop */
 .backToTop {
+  z-index: 10;
   width: 50px;
   height: 50px;
   background: var(--orange-color);
   border-radius: 35px;
   line-height: 50px;
   text-align: center;
-  display: block;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -716,6 +792,9 @@ p.count-text {
   box-shadow: -4px 4px 24px -10px #f55f8d;
   visibility: hidden;
   opacity: 0;
+}
+.cd-top--fade-out {
+  opacity: 0.5;
 }
 .cd-top--is-visible {
   visibility: visible;
