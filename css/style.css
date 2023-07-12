@@ -93,6 +93,15 @@ li {
   padding-right: 15px;
 }
 
+.header__l h3{
+  font-size: 36px;
+}
+.header__l a{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .header__r {
   display: flex;
   justify-content: end;
@@ -448,11 +457,23 @@ li {
     opacity: 0;
   }
 
+
+
+  .Banner-only__form h1 {
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
   .About__r h3 {
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 30px;
   }
+
+  
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -461,9 +482,21 @@ li {
     margin-right: auto;
     margin-left: auto;
   }
+
+  .Banner-only__form h1 {
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
   /*SEACH MENU */
   .header__r form {
     opacity: 1;
+  }
+  .About__r h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
   }
 }
 
@@ -473,6 +506,7 @@ li {
     margin-right: auto;
     margin-left: auto;
   }
+
 
   /* !FEATURE-FOOD */
   .feature-food__form {
@@ -489,6 +523,14 @@ li {
   .flex__l {
     width: 55%;
   }
+
+  .Banner-only__form h1 {
+    font-size: 54px;
+    line-height: 60px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
   .container {
     max-width: 960px;
     margin-right: auto;
