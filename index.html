@@ -675,60 +675,29 @@
 
 
     <!-- Popup -->
-    <script src="./js/jquery.magnific-popup.min.js"></script>
-    <script>$(document).ready(function () {
-      $(".popup-with-zoom-anim").magnificPopup({
-        type: "inline",
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="./js/jquery.magnific-popup.min.js"></script> -->
+    <script>
+      $(document).ready(function () {
+  $(".popup-with-zoom-anim").magnificPopup({
+    type: "inline",
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: "auto",
+
+    closeBtnInside: true,
+    preloader: false,
+
+    midClick: true,
+    removalDelay: 300,
+    mainClass: "my-mfp-zoom-in"
+  });
+});
+
+    </script>
+
     
-        fixedContentPos: false,
-        fixedBgPos: true,
-    
-        overflowY: "auto",
-    
-        closeBtnInside: true,
-        preloader: false,
-    
-        midClick: true,
-        removalDelay: 300,
-        mainClass: "my-mfp-zoom-in"
-      });
-    });</script>
-
-    <script> 
-    
-  $(document).ready(function () {
-    $('.popup-with-zoom-anim').magnificPopup({
-      type: 'inline',
-
-      fixedContentPos: false,
-      fixedBgPos: true,
-
-      overflowY: 'auto',
-
-      closeBtnInside: true,
-      preloader: false,
-
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-zoom-in'
-    });
-
-    $('.popup-with-move-anim').magnificPopup({
-      type: 'inline',
-
-      fixedContentPos: false,
-      fixedBgPos: true,
-
-      overflowY: 'auto',
-
-      closeBtnInside: true,
-      preloader: false,
-
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-slide-bottom'
-    });
-  });</script>
 
 
 
@@ -765,12 +734,12 @@
     >
       <i class="fa fa-angle-up"></i
     ></a>
-    <script
+    <!-- <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
     <script src="./js/util.js"></script>
     <script src="./js/backtotop.js"></script>
     <!-- OWL JS -->
