@@ -49,7 +49,7 @@
         <div class="container">
             <div class="header__form">
                 <div class="header__l">
-                  <h3>Diner</h3>
+                  <h3><a href="#">Diner</a></h3>
                 </div>
                 <div class="header__r">
                   <form action="">
@@ -173,37 +173,37 @@
             <div class="Popular__item">
               <img src="./img/g2.jpg" alt="#">
               <div class="Popular__pst">
-                <h4>Vegetarian</h4>
-                <h6>$350</h6>
+                <h4>Drinks</h4>
+                <h6>$550</h6>
               </div>  
             </div>
             <div class="Popular__item">
               <img src="./img/g3.jpg" alt="#">
               <div class="Popular__pst">
-                <h4>Vegetarian</h4>
-                <h6>$350</h6>
+                <h4>Lunch</h4>
+                <h6>$650</h6>
               </div>  
             </div>
             <div class="Popular__item">
               
               <img src="./img/g4.jpg" alt="#">
               <div class="Popular__pst">
-                <h4>Vegetarian</h4>
-                <h6>$350</h6>
+                <h4>Bakery</h4>
+                <h6>$550</h6>
               </div>  
             </div>
             <div class="Popular__item">
               <img src="./img/g5.jpg" alt="#">
               <div class="Popular__pst">
-                <h4>Vegetarian</h4>
-                <h6>$350</h6>
+                <h4>Desserts</h4>
+                <h6>$750</h6>
               </div>  
             </div>  
             <div class="Popular__item">
               <img src="./img/g6.jpg" alt="#">
               <div class="Popular__pst">
-                <h4>Vegetarian</h4>
-                <h6>$350</h6>
+                <h4>Pizza</h4>
+                <h6>$850</h6>
               </div>  
             </div>
             
@@ -239,7 +239,7 @@
             <div class="feature-food__info__r">
               <p>01</p>
               <a href="#">
-                <h4>Soup</h4>
+                <h4>Drinks</h4>
               </a>
             </div>
           </div>
@@ -255,7 +255,7 @@
             <div class="feature-food__info__r">
               <p>01</p>
               <a href="#">
-                <h4>Soup</h4>
+                <h4>Pizza</h4>
               </a>
             </div>
           </div>
@@ -271,7 +271,7 @@
             <div class="feature-food__info__r">
               <p>01</p>
               <a href="#">
-                <h4>Soup</h4>
+                <h4>Breakfast</h4>
               </a>
             </div>
           </div>
@@ -287,7 +287,7 @@
             <div class="feature-food__info__r">
               <p>01</p>
               <a href="#">
-                <h4>Soup</h4>
+                <h4>Lunch</h4>
               </a>
             </div>
           </div>
@@ -303,7 +303,7 @@
             <div class="feature-food__info__r">
               <p>01</p>
               <a href="#">
-                <h4>Soup</h4>
+                <h4>Dinner</h4>
               </a>
             </div>
           </div>
@@ -675,28 +675,60 @@
 
 
     <!-- Popup -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <!-- <script src="./js/jquery.magnific-popup.min.js"></script> -->
-    <script>
-    $(document).ready(function () {
-    $(".popup-with-zoom-anim").magnificPopup({
-    type: "inline",
-    fixedContentPos: false,
-    fixedBgPos: true,
-
-    overflowY: "auto",
-
-    closeBtnInside: true,
-    preloader: false,
-
-    midClick: true,
-    removalDelay: 300,
-    mainClass: "my-mfp-zoom-in"
-  });
-});
-    </script>
-
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script>$(document).ready(function () {
+      $(".popup-with-zoom-anim").magnificPopup({
+        type: "inline",
     
+        fixedContentPos: false,
+        fixedBgPos: true,
+    
+        overflowY: "auto",
+    
+        closeBtnInside: true,
+        preloader: false,
+    
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in"
+      });
+    });</script>
+
+    <script> 
+    
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });</script>
 
 
 
@@ -733,15 +765,11 @@
     >
       <i class="fa fa-angle-up"></i
     ></a>
+    
     <script src="./js/util.js"></script>
     <script src="./js/backtotop.js"></script>
     <!-- OWL JS -->
-    <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-    ></script>
+    
     <script>
   $(document).ready(function () {
     $(".carousel2").owlCarousel({
