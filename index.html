@@ -42,7 +42,7 @@
       referrerpolicy="no-referrer"
     />
 </head>
-<body>
+<body id="myBody">
     <!-- Quan -->
     <!-- header -->
     <header class="header">
@@ -56,7 +56,10 @@
                     <input id="SeachHere" type="text" placeholder="Seach Here">
                     <i class="fa fa-search search__icon"></i>
                   </form>
-                  <i class="fa-solid fa-moon"></i>
+                  <button class="btn" id="switchButton" title="Click to switch theme">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
+                  </button>
                   <div id="overlay" onclick="off()">
                     <div id="text">
                       <div class="overlay__form">
@@ -644,6 +647,7 @@
       </section>
     </footer>
 
+
     <!-- overlay -->
     <script>
         function on() {
@@ -754,6 +758,9 @@
   });
     </script>
 
+
+<!-- dark -->
+<script src="./js/dark.js"></script>
     
 </body>
 </html>

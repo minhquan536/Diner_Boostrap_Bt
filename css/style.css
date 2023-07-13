@@ -34,6 +34,8 @@ body {
   --gray-dark-color: #343a40;
   --black-color: #232121;
   --font-primary: "Quicksand", sans-serif;
+
+  --dark-txt: #c2d0da;
 }
 .container {
   width: 100%;
@@ -105,7 +107,7 @@ li {
 .header__r {
   display: flex;
   justify-content: end;
-  gap: 30px;
+
   align-items: center;
   position: relative;
 }
@@ -1299,4 +1301,135 @@ footer {
     font-size: 18px;
     text-align: left;
   }
+}
+
+
+/* ! dark light */
+#myBody {
+  background-color: white;
+}
+#switchButton {
+  font-size: 20px;
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  padding-right:70px ;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+  background-color: #232220;
+}
+
+.dark .About h3{
+  color: var(--white);
+}
+
+.dark .About .About__l p{
+  color: var(--dark-txt);
+}
+
+.dark .header__r input{
+  background-color: #232220;
+}
+
+.dark .Popular{
+  background-color: #282828;
+}
+
+.dark .Popular .Popular__text h3{
+  color: var(--white);
+}
+
+.dark .feature-food .feature-food__item {
+  border: 1px solid #393937;
+  color: var(--dark-txt);
+}
+
+.dark .feature-food .feature-food__item h4{
+  color: var(--white);
+}
+
+.dark .feature-food .feature-food__info__l i{
+  background-color: #282828;
+  border-radius: 5px;
+  border: 1px solid #393937;
+}
+
+.dark .feature-food .feature-food__info__l i:hover{
+  background-color: var(--orange);
+}
+
+/* Nhật - dark */
+.dark .counter{
+  background-color: #282828;
+}
+
+.dark .counter .timer{
+  color: var(--white);
+}
+
+.dark .counter .count-text{
+  color: var(--dark-txt);
+}
+
+.dark .Blog{
+  background-color: #282828;
+}
+.dark .Blog h3{
+  color: var(--white);
+}
+
+.dark .Blog .card-bot h4{
+  color: var(--white);
+  font-weight: 500;
+}
+.dark .Blog .card-bot span{
+  color: var(--dark-txt);
+}
+
+.dark .Blog .card-bot a{
+  color: var(--dark-txt);
+}
+
+.dark .Carousel h3{
+  color: var(--white);
+}
+
+.dark .Carousel .Carousel__item {
+  color: var(--white);
+}
+.dark .Carousel blockquote{
+  color: var(--white);
+}
+.dark .Carousel .Carousel__desc{
+  color: var(--dark-txt);
+}
+.dark .Carousel .Carousel__item {
+  color: var(--white);
+}
+
+.dark .footer__left ul li a {
+  background-color: #282828;
+}
+
+.dark .footer__right2 .mt-4 input {
+  background-color: #282828;
+}
+
+
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
 }
